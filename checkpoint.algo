@@ -1,0 +1,13 @@
+var
+tab [10] : integer
+temp : integer
+for(i from 1 to tab.length -1) {
+    temp <- tab[i]
+    j <- i-1
+     (while(j>=0 and temp < tab[j])) THEN
+       tab[j+1] <- tab[j]
+       j--
+
+    END while
+    tab[j+1] <- temp
+}
